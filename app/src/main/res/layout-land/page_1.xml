@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="@android:color/holo_orange_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView android:layout_width="100dp" android:layout_height="25dp"
+              android:text=""
+              android:gravity="center"
+              android:textSize="14sp"
+              android:id="@+id/longi"
+              app:layout_constraintTop_toTopOf="parent"
+              android:layout_marginTop="32dp" app:layout_constraintStart_toEndOf="@+id/textView"/>
+
+    <TextView
+            android:text=""
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:id="@+id/lati"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="32dp" android:layout_marginRight="32dp" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:text=""
+            android:layout_width="230dp"
+            android:layout_height="51dp"
+            android:id="@+id/sunriseResult"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/lati"/>
+    <TextView
+            android:text=""
+            android:layout_width="230dp"
+            android:layout_height="51dp"
+            android:id="@+id/sunsetResult"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/sunriseResult"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:text=""
+            android:layout_width="230dp"
+            android:layout_height="51dp"
+            android:id="@+id/civilDawn"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/sunsetResult"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+    />
+    <TextView
+            android:text=""
+            android:layout_width="230dp"
+            android:layout_height="51dp"
+            android:id="@+id/civilTwilight"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            android:textSize="18sp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/civilDawn"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+    />
+    <ImageView
+            android:layout_width="59dp"
+            android:layout_height="51dp" app:srcCompat="@drawable/dawn_aurora_daybreak_sun_weather"
+            android:id="@+id/imageView"
+            tools:ignore="MissingConstraints"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/sunriseResult"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/longi"/>
+    <ImageView
+            android:layout_width="59dp"
+            android:layout_height="51dp" app:srcCompat="@drawable/sunset_sundown_sun_weather"
+            android:id="@+id/imageView2"
+            tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintEnd_toStartOf="@+id/sunsetResult"
+    />
+
+    <ImageView
+            android:layout_width="59dp"
+            android:layout_height="51dp" app:srcCompat="@drawable/twilightstarts"
+            android:id="@+id/imageView3"
+            tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toStartOf="@+id/civilDawn"
+    />
+    <ImageView
+            android:layout_width="59dp"
+            android:layout_height="51dp" app:srcCompat="@drawable/twilightstops"
+            android:id="@+id/imageView4"
+            tools:ignore="MissingConstraints" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toStartOf="@+id/civilTwilight"
+    />
+    <TextView
+            android:text=""
+            android:gravity="center"
+            android:layout_width="100dp" android:layout_height="25dp"
+            android:id="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="32dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/longi"/>
+    <TextView
+            android:text=""
+            android:layout_width="100dp" android:layout_height="25dp"
+            android:gravity="center"
+            android:id="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/lati"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
